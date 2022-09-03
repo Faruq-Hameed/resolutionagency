@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins',sans-serif;
+}
+
+.header-nav-container{
+    background-image: url(./images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    color: #ffff;
+}
+
+.main-navs{
+ width: 70%;
+ font-size: 16px;
+}
+
+.main-navs ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li, a{
+    text-decoration: none;
+    list-style: none;
+    color: #ffff;
+}
+
+.main-navs li:hover{
+    font-size: 18px;
+}
+
+.resolution{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+button{
+    border: none;
+    outline: none;
+    width: 11rem;
+    color: #ffff;
+    border-radius: 0px 20px 0px 20px;
+    height: 3rem;
+    background: linear-gradient(to right, rgb(234, 21, 85), rgb(227, 78, 78));
+}
+
+button:hover{
+    background: linear-gradient(to right, rgb(234, 21, 234),rgb(233, 107, 107), rgb(233, 107, 107));
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    color: #ffff;
+    padding: 200px 10px 0px 0px;
+}
+
+.header-text-container{
+    height: 30rem;
+    display: grid;
+    align-items: center;
+    padding: 0px 20px;
+    z-index: 7;
+}
+
+.yellow-text{
+    color: rgb(255, 174, 0);
+    font-weight: 700;
+}
+
+.header-h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+main{
+    background-color: rgb(216, 233, 249);
+}
+
+
+.agency-container{
+    display:flex;
+}
+
+.agency-texts{
+    padding: 50px 40px;
+    display: grid;
+    color: rgb(35, 35, 99);
+
+}
+
+.agency-header{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.agency-texts hr{
+    background: linear-gradient(to right, rgb(234, 21, 85), rgb(227, 78, 78));
+    height: 7px;
+    width: 60%;
+    border-radius: 20px;
+    /* margin-bottom: 50px; */
+}
+
+
+.agency-stats-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.agency-stats{
+    box-shadow: 0px 0px 7px 0px rgba(184,204,204,0.75);
+    text-align: center;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+
+.agency-stats h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.agency-stats p{
+    font-size: 15px;  
+}
+
+.specialization-container{
+    border: 2px solid red;
+    display: flex;
+    height: 300px;
+}
+
+.specialization-header{
+    text-align: center;
+}
+
+hr {
+}

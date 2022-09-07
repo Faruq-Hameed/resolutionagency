@@ -2,6 +2,12 @@
     margin: 0px;
     padding: 0px;
     font-family: 'poppins',sans-serif;
+    transition: .1s linear;
+}
+
+body{
+    display: grid;
+    place-items: center;
 }
 
 .header-nav-container{
@@ -91,6 +97,7 @@ main{
 
 .agency-container{
     display:flex;
+    justify-content: space-evenly;
 }
 
 .agency-texts{
@@ -110,7 +117,6 @@ main{
     height: 7px;
     width: 60%;
     border-radius: 20px;
-    /* margin-bottom: 50px; */
 }
 
 
@@ -323,7 +329,6 @@ main{
     height: 240px;
     display: grid;
     grid-template-columns: 1.3fr 0.8fr repeat(3, 1fr);
-    /* justify-content: space-between; */
     grid-template-rows: 200px;
     background-color: blue;
     background-image: url(./images/footer-background.png);
@@ -364,7 +369,6 @@ main{
 }
 
 footer ul{
-    /* border: 2px solid red; */
     display: grid;
     row-gap: 15px;
     padding: 10px 0px;
@@ -378,7 +382,6 @@ footer a:hover{
 }
 
 .phone-container, .email-container, .location-container{
-    /* border: 2px solid red; */
     display: flex;
     grid-template-columns: auto auto;
     margin-top: 5px;
@@ -401,11 +404,6 @@ footer a:hover{
     margin-top: 5px;
 }
 
-
-.phone-container a, .email-container a, .location-container p{
-    /* border-bottom: 2px solid #ffff; */
-
-}
 .contact-us i:hover{
     color: rgb(227, 78, 78);
     background: linear-gradient(to right, rgb(246, 243, 244), rgb(255, 255, 255));
@@ -438,11 +436,70 @@ footer a:hover{
 
 }
 
-/* .pointer-up{
-    border: 2px solid black;
-    background: linear-gradient(to right, rgb(145, 49, 81), rgb(235, 18, 18));
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    z-index: 5;
-} */
+@media screen and (max-width: 760px){
+    header, .agency-container, .specialization-container, .our-features, .blogs{
+        flex-direction: column;
+    }
+
+    header{
+        padding: 20px 10px 10px 10px;
+    }
+
+
+
+    .main-navs{
+        width: 100%;
+        justify-content: space-between;
+
+    }
+    
+.main-navs ul{
+    width: 100%;
+    font-size: 30px;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    
+   }
+   
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 10px;
+    color: #ffff;
+}
+
+#resolution , ul button{
+    display: none;
+}
+
+.specializations{
+    width: 100%;
+}
+
+.our-features-container{
+    width: 70%;
+    
+    justify-content: center;
+    place-items: center;
+    margin: auto;
+
+}
+
+.blog-image-container{
+    width: 90%;
+}
+
+.blog-img{
+    width: 100%;
+}
+
+.main-footer{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+}
+}

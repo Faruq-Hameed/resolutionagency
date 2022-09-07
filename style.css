@@ -2,7 +2,11 @@
     margin: 0px;
     padding: 0px;
     font-family: 'poppins',sans-serif;
-    transition: .1s linear;
+    transition: .2s linear;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body{
